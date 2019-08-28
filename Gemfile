@@ -10,6 +10,7 @@ gem 'mysql2', '0.5.2'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
+gem 'sass'
 gem 'sass-rails', '5.0.7'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -48,6 +49,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'better_errors' #エラー画面の便利化
+  gem 'binding_of_caller' #エラー画面の便利化
 end
 
 group :test do
@@ -62,5 +65,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pry-rails' #binding.pryで処理を止めてデバックが出来るようになる
+gem 'compass'
 gem 'compass-rails', '3.1.0' #Sassを元に開発されたフレームワークで５つのモジュールを含んでいる
 gem 'sprockets', '3.7.2' #Asset Pipelineの基盤となるアセットパッケージング機能を提供する
+gem 'jquery-rails' #jsライブラリのjqueryを使用可能にする
+gem 'bourbon' #自分の好きなクラス名やID名に対してスタイルをつけられる
