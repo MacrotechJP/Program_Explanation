@@ -1,9 +1,4 @@
-// ——————————————————————————————————————————————————
-// TextScramble
-// ——————————————————————————————————————————————————
-
 $(function(){
-  console.log(111);
   $(".menu-open-button").click();
   class TextScramble {
     constructor(el) {
