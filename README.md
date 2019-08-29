@@ -16,6 +16,7 @@ ps aux | grep unicorn(unicorn関連のプロセスのみを抽出)
 kill -9 <確認したunicorn rails masterのPID>(現在動いているプロセスを停止させる)
 tail -f log/unicorn.stdout.log(正常に動いている際のログを確認)
 sudo service nginx restart(Nginxを再起動して設定ファイルを再読み込み)
+bundle exec cap production deploy(自動デプロイ)
 #MySQLパスワード
 koyotanaka
 
