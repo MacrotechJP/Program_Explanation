@@ -12,17 +12,7 @@
   <nav class="menu_java">
     <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
     <label class="menu-open-button" for="menu-open">Java</label>
-    <div class="menu-item">Java概要
-      <a href="#" class="menu-item-item1">エラー解決</a><a href="#" class="menu-item-item2">エラー解決</a>
-      <a href="#" class="menu-item-item3">エラー解決</a><a href="#" class="menu-item-item4">エラー解決</a>
-      <a href="#" class="menu-item-item5">エラー解決</a><a href="#" class="menu-item-item6">エラー解決</a>
-      <a href="#" class="menu-item-item7">エラー解決</a>
-    </div>
-    <%# <label class="menu-item 2">基本構文</label>
-    <label class="menu-item 3">統合開発環境</label>
-    <label class="menu-item 4">フレームワーク</label>
-    <label class="menu-item 5">パッケージ</label>
-    <a href="#" class="menu-item 6">エラー解決</a> %>
+    <%= render :partial => "indexCategory" %>
   </nav>
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
     <defs>
@@ -44,7 +34,7 @@
   </svg>
   <div id="Java_header_right">
     <div id="Java_header_right_search">
-      <input type="text" placeholder="Search...(今は使えない)">
+      <input type="text" placeholder="Search...使用不可">
       <div class="search"></div>
     </div>
   </div>

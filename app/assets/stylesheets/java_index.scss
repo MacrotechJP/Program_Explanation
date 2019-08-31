@@ -17,6 +17,22 @@ $opening-angle:$pi*2;
   transition:transform ease-out 200ms;
   font-size: 14px;
 }
+@mixin menu-item-item {
+  background:$fg;
+  border-radius:100%;
+  width:70px;
+  height:70px;
+  color:white;
+  text-align:center;
+  line-height:80px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 
 #back_java {
   position: fixed;
@@ -132,14 +148,181 @@ $opening-angle:$pi*2;
     }
     .menu-item{
       @extend %ball;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
       cursor: pointer;
-      &:hover{
+      &-item1{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:110px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item2{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:190px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item3{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:270px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item4{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:350px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item5{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:430px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item6{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:510px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item7{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:590px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item8{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:82px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item9{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:162px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item10{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:242px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item11{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:322px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item12{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:402px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item13{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:482px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item14{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:562px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-go,label{
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .detail{
+        display: none;
+      }
+      a:hover{
         background:white;
         color:$fg;
+        cursor: pointer;
       }
       @for $i from 1 through $menu-items{
         &:nth-child(#{$i+2}){
@@ -281,196 +464,5 @@ $opening-angle:$pi*2;
     margin-left:20%;
     margin-top:50px;
     background-color: rgba(27,39,53,0.9);
-    .menu-item{
-      background:$fg;
-      border-radius:100%;
-      width:70px;
-      height:70px;
-      position:absolute;
-      top:120px;
-      color:white;
-      text-align:center;
-      line-height:80px;
-      transform:translate3d(0,0,0);
-      transition:transform ease-out 200ms;
-      font-size: 14px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      cursor: pointer;
-      &:hover{
-        background:white;
-        color:$fg;
-      }
-    }
-  }
-}
-.menu-item-item1{
-  background:$fg;
-  border-radius:100%;
-  width:70px;
-  height:70px;
-  position:absolute;
-  top:15px;
-  left:105px;
-  color:white;
-  text-align:center;
-  line-height:80px;
-  transform:translate3d(0,0,0);
-  transition:transform ease-out 200ms;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover{
-    background:white;
-    color:$fg;
-  }
-}
-.menu-item-item2{
-  background:$fg;
-  border-radius:100%;
-  width:70px;
-  height:70px;
-  position:absolute;
-  top:15px;
-  left:185px;
-  color:white;
-  text-align:center;
-  line-height:80px;
-  transform:translate3d(0,0,0);
-  transition:transform ease-out 200ms;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover{
-    background:white;
-    color:$fg;
-  }
-}
-.menu-item-item3{
-  background:$fg;
-  border-radius:100%;
-  width:70px;
-  height:70px;
-  position:absolute;
-  top:15px;
-  left:265px;
-  color:white;
-  text-align:center;
-  line-height:80px;
-  transform:translate3d(0,0,0);
-  transition:transform ease-out 200ms;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover{
-    background:white;
-    color:$fg;
-  }
-}
-.menu-item-item4{
-  background:$fg;
-  border-radius:100%;
-  width:70px;
-  height:70px;
-  position:absolute;
-  top:15px;
-  left:340px;
-  color:white;
-  text-align:center;
-  line-height:80px;
-  transform:translate3d(0,0,0);
-  transition:transform ease-out 200ms;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover{
-    background:white;
-    color:$fg;
-  }
-}
-.menu-item-item5{
-  background:$fg;
-  border-radius:100%;
-  width:70px;
-  height:70px;
-  position:absolute;
-  top:15px;
-  left:420px;
-  color:white;
-  text-align:center;
-  line-height:80px;
-  transform:translate3d(0,0,0);
-  transition:transform ease-out 200ms;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover{
-    background:white;
-    color:$fg;
-  }
-}
-.menu-item-item6{
-  background:$fg;
-  border-radius:100%;
-  width:70px;
-  height:70px;
-  position:absolute;
-  top:15px;
-  left:500px;
-  color:white;
-  text-align:center;
-  line-height:80px;
-  transform:translate3d(0,0,0);
-  transition:transform ease-out 200ms;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover{
-    background:white;
-    color:$fg;
-  }
-}
-.menu-item-item7{
-  background:$fg;
-  border-radius:100%;
-  width:70px;
-  height:70px;
-  position:absolute;
-  top:15px;
-  left:500px;
-  color:white;
-  text-align:center;
-  line-height:80px;
-  transform:translate3d(0,0,0);
-  transition:transform ease-out 200ms;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-  &:hover{
-    background:white;
-    color:$fg;
   }
 }
