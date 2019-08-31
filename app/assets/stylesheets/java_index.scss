@@ -281,5 +281,196 @@ $opening-angle:$pi*2;
     margin-left:20%;
     margin-top:50px;
     background-color: rgba(27,39,53,0.9);
+    .menu-item{
+      background:$fg;
+      border-radius:100%;
+      width:70px;
+      height:70px;
+      position:absolute;
+      top:120px;
+      color:white;
+      text-align:center;
+      line-height:80px;
+      transform:translate3d(0,0,0);
+      transition:transform ease-out 200ms;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover{
+        background:white;
+        color:$fg;
+      }
+    }
+  }
+}
+.menu-item-item1{
+  background:$fg;
+  border-radius:100%;
+  width:70px;
+  height:70px;
+  position:absolute;
+  top:15px;
+  left:105px;
+  color:white;
+  text-align:center;
+  line-height:80px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    background:white;
+    color:$fg;
+  }
+}
+.menu-item-item2{
+  background:$fg;
+  border-radius:100%;
+  width:70px;
+  height:70px;
+  position:absolute;
+  top:15px;
+  left:185px;
+  color:white;
+  text-align:center;
+  line-height:80px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    background:white;
+    color:$fg;
+  }
+}
+.menu-item-item3{
+  background:$fg;
+  border-radius:100%;
+  width:70px;
+  height:70px;
+  position:absolute;
+  top:15px;
+  left:265px;
+  color:white;
+  text-align:center;
+  line-height:80px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    background:white;
+    color:$fg;
+  }
+}
+.menu-item-item4{
+  background:$fg;
+  border-radius:100%;
+  width:70px;
+  height:70px;
+  position:absolute;
+  top:15px;
+  left:340px;
+  color:white;
+  text-align:center;
+  line-height:80px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    background:white;
+    color:$fg;
+  }
+}
+.menu-item-item5{
+  background:$fg;
+  border-radius:100%;
+  width:70px;
+  height:70px;
+  position:absolute;
+  top:15px;
+  left:420px;
+  color:white;
+  text-align:center;
+  line-height:80px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    background:white;
+    color:$fg;
+  }
+}
+.menu-item-item6{
+  background:$fg;
+  border-radius:100%;
+  width:70px;
+  height:70px;
+  position:absolute;
+  top:15px;
+  left:500px;
+  color:white;
+  text-align:center;
+  line-height:80px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    background:white;
+    color:$fg;
+  }
+}
+.menu-item-item7{
+  background:$fg;
+  border-radius:100%;
+  width:70px;
+  height:70px;
+  position:absolute;
+  top:15px;
+  left:500px;
+  color:white;
+  text-align:center;
+  line-height:80px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    background:white;
+    color:$fg;
   }
 }
