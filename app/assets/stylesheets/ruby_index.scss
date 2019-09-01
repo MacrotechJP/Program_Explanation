@@ -17,6 +17,22 @@ $opening-angle:$pi*2;
   transition:transform ease-out 200ms;
   font-size: 14px;
 }
+@mixin menu-item-item {
+  background:$fg;
+  border-radius:100%;
+  width:70px;
+  height:70px;
+  color:white;
+  text-align:center;
+  line-height:80px;
+  transform:translate3d(0,0,0);
+  transition:transform ease-out 200ms;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 
 #back_ruby {
   position: fixed;
@@ -70,10 +86,11 @@ $opening-angle:$pi*2;
     }
   }
 }
-#Ruby_header{
+#header{
   width:100%;
   height:120px;
   background-color: rgba(27,39,53,0.9);
+  position: fixed;
   &_left{
     height:100%;
     width:18%;
@@ -131,13 +148,182 @@ $opening-angle:$pi*2;
     }
     .menu-item{
       @extend %ball;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-decoration: none;
-      &:hover{
+      cursor: pointer;
+      &-item1{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:110px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item2{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:190px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item3{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:270px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item4{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:350px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item5{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:430px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item6{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:510px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item7{
+        @include menu-item-item();
+        position:absolute;
+        top:0;
+        left:590px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item8{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:82px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item9{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:162px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item10{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:242px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item11{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:322px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item12{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:402px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item13{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:482px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-item14{
+        @include menu-item-item();
+        position:absolute;
+        top:84px;
+        left:562px;
+        cursor: pointer;
+        &:hover{
+          background:white;
+          color:$fg;
+        }
+      }
+      &-go,label{
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      .detail{
+        display: none;
+        font-size:10px;
+      }
+      a:hover{
         background:white;
         color:$fg;
+        cursor: pointer;
       }
       @for $i from 1 through $menu-items{
         &:nth-child(#{$i+2}){
@@ -146,7 +332,7 @@ $opening-angle:$pi*2;
       }
     }
   }
-  &_right{
+  &_right_ruby{
     height:100%;
     width:200px;
     float:right;
@@ -227,7 +413,7 @@ $opening-angle:$pi*2;
         left: 0;
         width: 60px;
         height: 60px;
-        background: $fg;
+        background: #AC1400;
         border-radius: 50%;
         transition: all 1s;
         z-index: 4;
@@ -269,7 +455,15 @@ $opening-angle:$pi*2;
   }
 }
 .Ruby_main{
+  padding-top:120px;
   width:100%;
-  height:1000px;
+  height:5000px;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  &_center{
+    width: 60%;
+    height:calc(100% - 50px);
+    margin-left:20%;
+    margin-top:50px;
+    background-color: rgba(27,39,53,0.9);
+  }
 }

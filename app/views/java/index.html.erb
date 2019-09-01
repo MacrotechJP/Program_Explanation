@@ -1,8 +1,8 @@
 <div id=back_java>
   <div id="back_stars"></div><div id="back_stars2"></div><div id="back_stars3"></div>
 </div>
-<div id="Java_header">
-  <div id="Java_header_left">
+<div id="header">
+  <div id="header_left">
     <a href="/">
       <p>Of the Engineer</p>
       <p>By the Engineer</p>
@@ -14,26 +14,9 @@
     <label class="menu-open-button" for="menu-open">Java</label>
     <%= render :partial => "indexCategory" %>
   </nav>
-  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-    <defs>
-      <filter id="shadowed-goo">
-        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-        <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
-        <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
-        <feOffset in="shadow" dx="1" dy="1" result="shadow" />
-        <feComposite in2="shadow" in="goo" result="goo" />
-        <feComposite in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-      <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-          <feComposite in2="goo" in="SourceGraphic" result="mix" />
-      </filter>
-    </defs>
-  </svg>
-  <div id="Java_header_right">
-    <div id="Java_header_right_search">
+  <%= render :partial => "/common/index_svg" %>
+  <div id="header_right_java">
+    <div id="header_right_java_search">
       <input type="text" placeholder="Search...使用不可">
       <div class="search"></div>
     </div>

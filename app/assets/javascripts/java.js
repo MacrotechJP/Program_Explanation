@@ -1,15 +1,13 @@
 //スクロール時ヘッダー表示変化
 $(function(){
   var pos = 0;
-  var header = $('#Java_header');
+  var header = $('#header');
   
   $(window).on('scroll', function(){
     if($(this).scrollTop() < pos || $(this).scrollTop() < 300){
-      //上スクロール時の処理
-      header.fadeIn();
+      header.fadeIn();//上スクロール時の処理
     }else{
-      //下スクロール時の処理
-      header.fadeOut();
+      header.fadeOut();//下スクロール時の処理
     }
     pos = $(this).scrollTop();
   });
