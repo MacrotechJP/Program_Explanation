@@ -460,10 +460,37 @@ $opening-angle:$pi*2;
   height:5000px;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   &_center{
-    width: 60%;
+    width: 70%;
     height:calc(100% - 50px);
-    margin-left:20%;
+    margin-left:15%;
     margin-top:50px;
     background-color: rgba(27,39,53,0.9);
+    padding: 10px 20px 0;
+    h1 {
+      width: 250px;
+      font-size:35px;
+      position:relative;
+      display:block;
+      padding: 40px 0 20px 45px;
+      color: white;
+      z-index: 1;
+      border-bottom: 3px solid white;
+      margin-bottom: 20px;
+      &:before{
+        content:'';
+        background-color:rgba(172,20,0,0.5);
+        position:  absolute;
+        left:  0;
+        height: 90px;
+        width: 90px;
+        border-radius:  50%;
+        top: 0;
+        z-index:  -1;
+      }
+    }
+    iframe{
+      width:100%;
+      height:900px;
+    }
   }
 }

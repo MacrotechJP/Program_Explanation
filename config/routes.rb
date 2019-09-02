@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root "program#index" #サイトのプログラミング言語選択ページ
   get "/Java",to:"java#index" #Javaのトップページ
   get "/Ruby",to:"ruby#index" #Rubyのトップページ
+  get "/Ruby/framework/Rails",to:"ruby#rails_index" #Rubyフレームワーク「Rails」のトップページ
 end
