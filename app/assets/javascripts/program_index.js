@@ -80,4 +80,19 @@ $(function(){
     counter = (counter + 1) % phrases.length
   }
   next()
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
