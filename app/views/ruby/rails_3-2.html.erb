@@ -1,41 +1,44 @@
-<div id=back_ruby>
-  <div id="back_stars"></div><div id="back_stars2"></div><div id="back_stars3"></div>
-</div>
-<div id="header">
-  <div id="header_left">
-    <a href="/">
-      <p>Of the Engineer</p>
-      <p>By the Engineer</p>
-      <p>For the Engineer</p>
-    </a>
+<div id="contents">
+  <div id=back_ruby>
+    <div id="back_stars"></div><div id="back_stars2"></div><div id="back_stars3"></div>
   </div>
-  <nav class="menu_ruby">
-    <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
-    <label class="menu-open-button" for="menu-open">Rails</label>
-    <%= render :partial => "rails_3-2Header" %>
-  </nav>
-  <%= render :partial => "/common/index_svg" %>
-  <div id="header_right_ruby">
-    <div id="header_right_ruby_search">
-      <input type="text" placeholder="Search...使用不可">
-      <div class="search"></div>
+  <div id="header">
+    <div id="header_left">
+      <a href="/">
+        <p>Of the Engineer</p>
+        <p>By the Engineer</p>
+        <p>For the Engineer</p>
+      </a>
+    </div>
+    <nav class="menu_ruby">
+      <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+      <label class="menu-open-button" for="menu-open">Rails</label>
+      <%= render :partial => "rails_3-2Header" %>
+    </nav>
+    <%= render :partial => "/common/index_svg" %>
+    <div id="header_right_ruby">
+      <div id="header_right_ruby_search">
+        <input type="text" placeholder="Search...使用不可">
+        <div class="search"></div>
+      </div>
+    </div>
+    <%= render :partial => "/common/header_clock" %>
+  </div>
+  <div class="Ruby_main">
+    <div class="Ruby_main_center">
+      <h1 class="topH">deviseの使い方</h1>
+      <ul>
+        <li><a href="#1" >deviseって何？</a></li>
+        <li><a href="" >deviseって何？</a></li>
+        <li><a href="" >deviseって何？</a></li>
+        <li><a href="" >deviseって何？</a></li>
+      </ul>
+      <div class="detail_images">
+        <%= image_tag "devise.png" ,style:"width:64.3%;"%>
+        <%= image_tag "devise2.jpg" ,style:"width:35.7%;"%>
+      </div>
+      <h1 class="categoryH" id="1">deviseって何？</h1>
     </div>
   </div>
-  <%= render :partial => "/common/header_clock" %>
 </div>
-<div class="Ruby_main">
-  <div class="Ruby_main_center">
-    <h1 class="topH">deviseの使い方</h1>
-    <ul>
-      <li><a href="#1" >deviseって何？</a></li>
-      <li><a href="" >deviseって何？</a></li>
-      <li><a href="" >deviseって何？</a></li>
-      <li><a href="" >deviseって何？</a></li>
-    </ul>
-    <div class="detail_images">
-      <%= image_tag "devise.png" ,style:"width:64.3%;"%>
-      <%= image_tag "devise2.jpg" ,style:"width:35.7%;"%>
-    </div>
-    <h1 class="categoryH" id="1">deviseって何？</h1>
-  </div>
-</div>
+<%= render :partial => "/common/loading" %>

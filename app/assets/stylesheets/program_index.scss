@@ -337,3 +337,72 @@ $bg:#8bc34a;
   from {box-shadow: 0 0 8px 6px #e91e63,0 0 12px 10px #333,0 0 12px 14px #e91e63;}
   to {box-shadow: 0 0 8px 6px rgba(255, 94, 26, 0),0 0 4px 40px #333,0 0 4px 41px rgba(255, 94, 26, 0);}
 }
+
+//ローディング画面
+@keyframes run {
+  0% {left: -5%;}
+  10%, 60% {left: calc((100% - 5%) / 2);}
+  70%, 100% {left: 100%;}
+}
+@keyframes rotating {
+  0%, 10% {transform: rotate(0deg);}
+  60%, 100% {transform: rotate(-1turn);}
+}
+#loading{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, silver, teal);
+  .loader {
+    width: 16em;
+    height: 8em;
+    position: relative;
+    overflow: hidden;
+    &:before,&:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+    }
+    &:before {
+      width: inherit;
+      height: 0.2em;
+      background-color: #D8D8D8;
+    }
+    &:after {
+      box-sizing: border-box;
+      width: 50%;
+      height: inherit;
+      border: 0.2em solid #D8D8D8;
+      border-radius: 50%;
+      left: 25%;
+    }
+    span {
+      position: absolute;
+      width: 5%;
+      height: 10%;
+      background-color: white;
+      border-radius: 50%;
+      bottom: 0.2em;
+      left: -5%;
+      animation: 2s linear infinite;
+      transform-origin: 50% -3em;
+      animation-name: run, rotating;
+      &:nth-child(2) {animation-delay: 0.075s;}
+      &:nth-child(3) {animation-delay: 0.15s;}
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

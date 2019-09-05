@@ -1,3 +1,31 @@
+//ローディング画面
+var time=new Date().getTime();
+$(function() {
+  var h = $(window).height();
+  $('#contents').hide();
+  $('#loading').height(h);
+});
+//全ての読み込みが完了したら実行
+$(window).on('load',function () {
+  var now = new Date().getTime();
+  if (now-time<=2500) {
+    setTimeout('stopload()',2500-(now-time));
+    return;
+  } else {
+    stopload();
+  }
+});
+//10秒たったら強制的にロード画面を非表示
+// $(function(){
+//   setTimeout('stopload()',10000);
+// });
+function stopload(){
+  $('#contents').show();
+  $('#loading').delay(900).fadeOut(800);
+  $(".menu-open-button").click();
+}
+
+
 //スムーズスクロールの処理
 $(function(){
   $('a[href^="#"]').click(function(){
@@ -13,7 +41,6 @@ $(function(){
 
 //トップページの変化テキスト処理
 $(function(){
-  $(".menu-open-button").click();
   class TextScramble {
     constructor(el) {
       this.el = el
