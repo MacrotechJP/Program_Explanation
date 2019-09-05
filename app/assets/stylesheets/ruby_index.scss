@@ -508,12 +508,20 @@ $opening-angle:$pi*2;
         }
       }
     }
+    .detail_images{
+      overflow: auto;
+      img{
+        // width:50%;
+        float: left;
+      }
+    }
     .categoryH {
       position: relative;/*相対位置*/
       padding-left: 1.2em;/*アイコン分のスペース*/
       line-height: 1.4;/*行高*/
       font-size: 20px;
       color:white;
+      margin-top:25px;
       &::before {
         font-family: "Font Awesome 5 Free";
         content: "\f075";/*アイコンのユニコード*/
