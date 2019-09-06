@@ -521,7 +521,7 @@ $opening-angle:$pi*2;
       line-height: 1.4;/*行高*/
       font-size: 20px;
       color:white;
-      margin-top:25px;
+      margin:25px 0;
       &::before {
         font-family: "Font Awesome 5 Free";
         content: "\f075";/*アイコンのユニコード*/
@@ -531,6 +531,25 @@ $opening-angle:$pi*2;
         top: 0;/*アイコンの位置*/
         color: #AC1400; /*アイコン色*/
       }
+      a{color:#AC1400;text-decoration:none;&:hover{text-decoration:underline;}}
+    }
+    .detail,.detail_hover{
+      color:white;
+      font-size: 15px;
+      margin:5px;
+      padding: 5px;
+      span,a{
+        color:#e91e63;
+        font-weight: bold;
+        a:hover{
+          opacity: 0.6;
+        }
+      }
+    }
+    .detail_box{
+      border-radius: 20px;
+      border:2px solid black;
+      margin-bottom: 75px;
     }
   }
 }

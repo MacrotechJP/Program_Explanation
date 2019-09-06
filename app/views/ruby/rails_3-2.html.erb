@@ -29,7 +29,7 @@
       <h1 class="topH">deviseの使い方</h1>
       <ul>
         <li><a href="#1" >deviseって何？</a></li>
-        <li><a href="" >deviseって何？</a></li>
+        <li><a href="#2" >実際に実装してみる！</a></li>
         <li><a href="" >deviseって何？</a></li>
         <li><a href="" >deviseって何？</a></li>
       </ul>
@@ -37,7 +37,39 @@
         <%= image_tag "devise.png" ,style:"width:64.3%;"%>
         <%= image_tag "devise2.jpg" ,style:"width:35.7%;"%>
       </div>
-      <h1 class="categoryH" id="1">deviseって何？</h1>
+      <h1 class="categoryH" id="1">deviseって何？&emsp;&emsp;&emsp;<a href="https://github.com/plataformatec/devise">＜公式ドキュメント＞</a></h1>
+      <p class="detail">deviseは、Rails上でログイン・ログアウト等の<span>認証機能</span>を簡単に実装出来るgemです。</p>
+      <p class="detail">&emsp;</p>
+      <p class="detail">認証機能を自分で実装しようと思うとどうしても工数がかかったり、安全性の面で不安が出てきてしまいます。</p>
+      <p class="detail">deviseというgemを使えば、コマンドを何度か打つだけで簡単に認証機能を実装することができます！</p>
+      <p class="detail">そして、会員登録からログイン認証が必要なページの管理等が容易に行えるようになります。</p>
+      <p class="detail">&emsp;</p>
+      <p class="detail">deviseは、10個のモジュールで構成されています。</p>
+      <div class="detail_box">
+        <p class="detail">・<span>データベース確認機能</span></p>
+        <p class="detail_hover">&emsp;ログイン中にユーザーの信頼性を検証するために、パスワードをハッシュしてデータベースに保存します。</p>
+        <p class="detail_hover">&emsp;認証は、POST要求またはHTTP基本認証の両方で実行できます。</p>
+        <p class="detail">・<span><a href="https://github.com/omniauth/omniauth">Omniauth</a>機能</span></p>
+        <p class="detail_hover">&emsp;OmniAuthのサポートを追加します。</p>
+        <p class="detail">・<span>確認機能</span></p>
+        <p class="detail_hover">&emsp;確認手順を記載したメールを送信し、サインイン時にアカウントが既に確認されているかどうかを確認します。</p>
+        <p class="detail">・<span>回復機能</span></p>
+        <p class="detail_hover">&emsp;ユーザーパスワードをリセットし、リセットの指示を送信します。</p>
+        <p class="detail">・<span>登録機能</span></p>
+        <p class="detail_hover">&emsp;登録プロセスを通じてユーザーのサインアップを処理し、ユーザーがアカウントを編集および破棄できるようにします。</p>
+        <p class="detail">・<span>覚えやすい</span></p>
+        <p class="detail_hover">&emsp;保存されたCookieからユーザーを記憶するためのトークンの生成とクリアを管理します。</p>
+        <p class="detail">・<span >追跡機能</span></p>
+        <p class="detail_hover">&emsp;サインイン数、タイムスタンプ、およびIPアドレスを追跡します。</p>
+        <p class="detail">・<span>タイムアウト機能</span></p>
+        <p class="detail_hover">&emsp;指定期間内にアクティブでなかったセッションを期限切れにします。</p>
+        <p class="detail">・<span>検証機能</span></p>
+        <p class="detail_hover">&emsp;電子メールとパスワードの検証を提供します。これはオプションであり、カスタマイズできるため、独自の検証を定義できます。</p>    
+        <p class="detail">・<span>ロック機能</span></p>
+        <p class="detail_hover">&emsp;指定された回数ログインに失敗すると、アカウントをロックします。</p>
+        <p class="detail_hover">&emsp;電子メールを介して、または指定された期間後にロック解除できます。</p>
+      </div>
+      <h1 class="categoryH" id="2">実際に実装してみる！</h1>
     </div>
   </div>
 </div>
