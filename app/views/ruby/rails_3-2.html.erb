@@ -69,7 +69,64 @@
         <p class="detail_hover">&emsp;指定された回数ログインに失敗すると、アカウントをロックします。</p>
         <p class="detail_hover">&emsp;電子メールを介して、または指定された期間後にロック解除できます。</p>
       </div>
+
       <h1 class="categoryH" id="2">実際に実装してみる！</h1>
+      <p class="detail">Devise 4.0はRails 4.1以降で動作します。 Gemfileに次の行を追加します。</p>
+      <div id="SourceCode">
+        <p class="head">Gemfile</p>
+        <p class="main"><span class="blue">gem</span> <span class="orange">'devise'</span></p>
+      </div>
+      <p class="detail">bundle installを実行し,Gemfileに追記したgemをインストールします。</p>
+      <div id="SourceCode">
+        <p class="head">ターミナル</p>
+        <p class="main"><span class="terminal">$ bundle install</span></p>
+      </div>
+      <p class="detail">deviseの設定ファイルをrailsアプリケーションにインストールするために次のコマンドを打ちます。</p>
+      <div id="SourceCode" style="padding:0; margin-bottom:0;">
+        <p class="head">ターミナル<span>プレビュー</span></p>
+        <p class="main"><span class="terminal">$ rails generate devise:install</span></p>
+      </div>
+      <p class="detail">実行後は、以下のようになります。</p>
+      <div id="SourceCode" style="margin:10px 0 20px;">
+        <p class="main_many"><span class="terminal">$ rails generate devise:install</span></p>
+        <p class="main_many"><span class="terminal">&emsp;create  config/initializers/devise.rb</span></p>
+        <p class="main_many"><span class="terminal">&emsp;create  config/locales/devise.en.yml</span></p>
+        <p class="main_many"><span class="terminal">================================================</span></p>
+        <p class="main_many"><span class="terminal">Some setup you must do manually if you haven't yet:</span></p>
+        <p class="main_many"><span class="terminal">1. Ensure you have defined default url options in your environments files. Here
+     is an example of default_url_options appropriate for a development environment
+     in config/environments/development.rb:</span></p>
+        <p class="main_many"><span class="terminal">&emsp;&emsp;config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }</span></p>
+        <p class="main_many"><span class="terminal">&emsp;In production, :host should be set to the actual host of your application.</span></p>
+        <p class="main_many"><span class="terminal">2. Ensure you have defined root_url to *something* in your config/routes.rb.</span></p>
+        <p class="main_many"><span class="terminal">&emsp;For example:</span></p>
+        <p class="main_many"><span class="terminal">&emsp;&emsp;root to: "home#index"</span></p>
+        <p class="main_many"><span class="terminal">3. Ensure you have flash messages in app/views/layouts/application.html.erb.</span></p>
+        <p class="main_many"><span class="terminal">&emsp;For example:</span></p>
+        <p class="main_many"><span class="terminal">&emsp;&emsp;&lt;p class="notice"&gt;&lt;%= notice %&gt;&lt;/p&gt;</span></p>
+        <p class="main_many"><span class="terminal">&emsp;&emsp;&lt;p class="alert"&gt;&lt;%= alert %&gt;&lt;/p&gt;</span></p>
+        <p class="main_many"><span class="terminal">4. You can copy Devise views (for customization) to your app by running:</span></p>
+        <p class="main_many"><span class="terminal">&emsp;&emsp;rails g devise:views</span></p>
+        <p class="main_many"><span class="terminal">================================================</span></p>
+      </div>
+      <p class="detail">ここで表示されるメッセージについて、解説していきます。</p>
+      <div class="detail_box">
+        <p class="detail">1. <span>deviseメーラーのデフォルトURLオプションを設定します。</span></p>
+        <p class="detail">&emsp;config/environments/development.rbに以下の記述を追記します。</p>
+        <div id="SourceCode" style="padding:0; margin-bottom:10px;">
+          <p class="head">config/environments/development.rb</p>
+          <p class="main"><span class="rightblue">config</span>.<span class="rightblue">action_mailer</span>.<span class="rightblue">default_url_options</span> = { <span class="blue">host:</span> <span class="orange">'localhost'</span>, <span class="blue">port:</span> <span class="green">3000</span> }</p>
+        </div>
+        <p class="detail">2. <span>ルートを設定します。</span> </p>
+        <p class="detail">&emsp;deviseだと会員登録完了後などにルートに飛ぶ設定になっているため、あらかじめ「config/routes.rb」でルートを設定する必要があります。</p>
+        <p class="detail">&emsp;以下の例のように、config/routes.rbにルートを設定します。</p>
+        <div id="SourceCode" style="padding:0; margin-bottom:10px;">
+          <p class="head">例）config/routes.rb</p>
+          <p class="main">root <span class="blue">to:</span> <span class="orange">"home#index"</span></p>
+        </div>
+        <p class="detail">3. <span>フラッシュメッセージ用のタグをビューに埋め込みます。</span></p>
+        <p class="detail">4. <span>deviseのビューをカスタマイズする時は下記のコマンドを実行します。</span></p>
+      </div>
     </div>
   </div>
 </div>
