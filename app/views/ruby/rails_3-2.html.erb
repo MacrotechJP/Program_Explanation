@@ -83,7 +83,7 @@
       </div>
       <p class="detail">deviseの設定ファイルをrailsアプリケーションにインストールするために次のコマンドを打ちます。</p>
       <div id="SourceCode" style="padding:0; margin-bottom:0;">
-        <p class="head">ターミナル<span>プレビュー</span></p>
+        <p class="head">ターミナル</p>
         <p class="main"><span class="terminal">$ rails generate devise:install</span></p>
       </div>
       <p class="detail">実行後は、以下のようになります。</p>
@@ -124,8 +124,30 @@
           <p class="head">例）config/routes.rb</p>
           <p class="main">root <span class="blue">to:</span> <span class="orange">"home#index"</span></p>
         </div>
-        <p class="detail">3. <span>フラッシュメッセージ用のタグをビューに埋め込みます。</span></p>
+        <p class="detail">3. <span>エラーメッセージ用のタグをビューに埋め込みます。</span></p>
+        <p class="detail">&emsp;app/views/layouts/application.html.erbのbody内に以下の記述を追記します。</p>
+        <p class="detail">&emsp;ログインした際やログアウトした際、フォームの送信エラーなど簡単な通知をしたい場合に使用します。 </p>
+        <div id="SourceCode" style="padding:0; margin-bottom:10px;">
+          <p class="head">app/views/layouts/application.html.erb</p>
+          <p class="main_many">&lt;<span class="blue">p</span> <span class="rightblue">class</span>=<span class="orange">"notice"</span>&gt;<span class="blue">&lt;%=</span> notice <span class="blue">%&gt;</span>&lt;/<span class="blue">p</span>&gt;</p>
+          <p class="main_many">&lt;<span class="blue">p</span> <span class="rightblue">class</span>=<span class="orange">"alert"</span>&gt;<span class="blue">&lt;%=</span> alert <span class="blue">%&gt;</span>&lt;/<span class="blue">p</span>&gt;</p>
+        </div>
         <p class="detail">4. <span>deviseのビューをカスタマイズする時は下記のコマンドを実行します。</span></p>
+        <p class="detail">&emsp;deviseでは認証周りのビューファイルは最初から用意されています。</p>
+        <p class="detail">&emsp;しかしデフォルトのビューは非常に簡素な為、以下のコマンドを実行しビューファイルを作成・編集することができます。</p>
+        <p class="detail">&emsp;deviseファイル作成後、新規登録ビューは app/views/devise/registrations/new.html.erb、</p>
+        <p class="detail">&emsp;ログインビューは app/views/devise/sessions/new.html.erbに作成されます。</p>
+        <div id="SourceCode" style="margin-bottom:20px;">
+          <p class="head">ターミナル</p>
+          <p class="main"><span class="terminal">$ rails g devise:views</span></p>
+        </div>
+      </div>
+      <p class="detail">&emsp;次のコマンドを打ち、ログイン認証に必要なファイルを生成します。</p>
+      <div id="SourceCode" style="padding:0; margin-bottom:0;">
+        <p class="head">ターミナル<span id="pre">プレビュー</span>
+          <%= video_tag("rails g devise User.mp4", controlls: true,autoplay: true,muted:true) %> 
+        </p>
+        <p class="main"><span class="terminal">$ rails generate devise User</span></p>
       </div>
     </div>
   </div>
