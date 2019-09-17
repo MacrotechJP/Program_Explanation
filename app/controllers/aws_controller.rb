@@ -1,0 +1,2 @@
+class AwsController < ApplicationController
+end

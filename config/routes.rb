@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get "/Ruby",to:"ruby#index" #Rubyのトップページ
   get "/Ruby/framework/Rails",to:"ruby#rails_index" #Rubyフレームワーク「Rails」のトップページ
   get "/Ruby/framework/Rails/devise",to:"ruby#rails_3-2" #Rubyフレームワーク「Rails」のgem「一覧」「devise」
+  get "/AWS",to:"aws#index" #AWSのトップページ
 end

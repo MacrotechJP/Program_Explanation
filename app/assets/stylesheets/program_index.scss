@@ -272,7 +272,7 @@ $bg:#8bc34a;
       }
     }
     .circle6 {
-      background: #777BB3;
+      background: #232F3E;
       animation: pulse_6 2s 1.25s ease-out infinite;
       @include circle_commmon();
       &:hover {
@@ -330,7 +330,7 @@ $bg:#8bc34a;
 }
 @keyframes pulse_6 {
   0% {box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0),0 0 0px 0px #333,0 0 0px 0px rgba(26, 140, 255, 0);}
-  10% {box-shadow: 0 0 8px 6px #777BB3,0 0 12px 10px #333,0 0 12px 14px #777BB3;}
+  10% {box-shadow: 0 0 8px 6px #232F3F,0 0 12px 10px #333,0 0 12px 14px #232F3F;}
   100% {box-shadow: 0 0 8px 6px rgba(26, 140, 255, 0),0 0 0px 40px #333,0 0 0px 40px rgba(26, 140, 255, 0);}
 }
 @keyframes hover_6 {
